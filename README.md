@@ -13,6 +13,14 @@ This package will parse the CSV files and return them as a [Pandas DataFrame](ht
 
 Pull requests welcome.
 
+## Install
+
+You can check out the repo with git or install it and all the data with pip:
+
+```
+pip3 install https://github.com/FutureSharks/financial-data/archive/master.zip
+```
+
 ## Data file path structure
 
 `data/<type>/<provider>/<instrument>`
