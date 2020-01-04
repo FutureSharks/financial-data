@@ -29,6 +29,13 @@ For example, `data/stocks/histdata/sp500/DAT_ASCII_SPXUSD_M1_2010.csv` is stock 
 
 ## Examples
 
+These data from these providers are available:
+
+- Bitstamp: BTC_USD
+- Kraken: BTC_EUR, ETH_EUR
+- Oanda: AUD_JPY, ASU_USD, EUR_USD, GBP_USD, USD_CAD
+- Histdata: ETXEUR, GRXEUR, JPXJPY, SPXUSD
+
 #### BTC
 
 ```python
