@@ -2,12 +2,14 @@
 
 Intraday financial data files for backtesting or analysis. Currently this includes minute bars for:
 
-- S&P 500 from 2010-2018 in USD (SPXUSD)
-- NIKKEI 225 from 2010-2018 in JPY (JPXJPY)
-- DAX 30 from 2010-2018 in EUR (GRXEUR)
-- EUROSTOXX 50 from 2010-2018 in EUR (ETXEUR)
-- Currencies pairs: AUD_JPY, AUD_USD, EUR_USD, GBP_USD, USD_CAD
-- Cryptocurrencies pairs: BTC_USD, BTC_EUR, ETH_EUR
+- S&P 500 from 2010-2018 in USD (SPXUSD) (from Histdata)
+- NIKKEI 225 from 2010-2018 in JPY (JPXJPY) (from Histdata)
+- DAX 30 from 2010-2018 in EUR (GRXEUR) (from Histdata)
+- EUROSTOXX 50 from 2010-2018 in EUR (ETXEUR) (from Histdata)
+- Currencies pairs 2005-2020: AUD_JPY, AUD_USD, EUR_USD, GBP_USD, USD_CAD (from Oanda)
+- Cryptocurrency: BTC_USD (2012-2018) (from Bitstamp)
+- Cryptocurrency: BTC_EUR (2018), ETH_EUR (2018) (from Kraken)
+- Others 2005-2020: AU200, CORN, DE10YB, FR40, JP225, NAS100, NATGAS, NL25, SOYBN, SPX500, SUGAR, UK10YB, US2000, USB10Y, WHEAT, WTICO, XAU (from Oanda)
 
 This package will parse the CSV files and return them as a [Pandas DataFrame](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html).
 
@@ -28,17 +30,6 @@ pip3 install https://github.com/FutureSharks/financial-data/archive/master.zip
 For example, `data/stocks/histdata/sp500/DAT_ASCII_SPXUSD_M1_2010.csv` is stock data for the S&P 500 index from the histdata provider.
 
 ## Examples
-
-These data from these providers are available:
-
-- Bitstamp: BTC_USD
-- Kraken: BTC_EUR, ETH_EUR
-- Oanda: AUD_JPY, ASU_USD, EUR_USD, GBP_USD, USD_CAD, AU200_AUD, CORN_USD, JP225_USD, NL25_EUR, SPX500_USD, UK10YB_GBP, USB10Y_USD, WTICO_USD
-AUD_JPY, DE10YB_EUR, FR40_EUR, NAS100_USD, SUGAR_USD, US2000_USD, USD_CAD, XAU_USD
-AUD_USD, EUR_JPY, GBP_USD, NATGAS_USD, SOYBN_USD, UK100_GBP, USB02Y_USD, WHEAT_USD
-
-
-- Histdata: ETXEUR, GRXEUR, JPXJPY, SPXUSD
 
 #### BTC
 
